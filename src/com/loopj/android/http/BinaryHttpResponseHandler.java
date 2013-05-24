@@ -18,18 +18,17 @@
 
 package com.loopj.android.http;
 
+import android.os.Message;
+import ch.boye.httpclientandroidlib.Header;
+import ch.boye.httpclientandroidlib.HttpEntity;
+import ch.boye.httpclientandroidlib.HttpResponse;
+import ch.boye.httpclientandroidlib.StatusLine;
+import ch.boye.httpclientandroidlib.client.HttpResponseException;
+import ch.boye.httpclientandroidlib.entity.BufferedHttpEntity;
+import ch.boye.httpclientandroidlib.util.EntityUtils;
+
 import java.io.IOException;
 import java.util.regex.Pattern;
-
-import org.apache.http.Header;
-import org.apache.http.HttpEntity;
-import org.apache.http.HttpResponse;
-import org.apache.http.StatusLine;
-import org.apache.http.client.HttpResponseException;
-import org.apache.http.entity.BufferedHttpEntity;
-import org.apache.http.util.EntityUtils;
-
-import android.os.Message;
 
 /**
  * Used to intercept and handle the responses from requests made using
